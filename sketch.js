@@ -34,6 +34,7 @@ slingShot=new SlingShot(this.ball,{x:100,y:200})
 
 }
 function draw (){
+  background(255,255,255);
 
   block1.display();
   block2.display();
@@ -61,7 +62,7 @@ function draw (){
  
  
  function mouseReleased(){
-     slingshot.fly();
+     slingshotfly();
      gameState = "launched";
  }
  
@@ -72,22 +73,6 @@ function draw (){
         slingshot.attach(polygon.body);
      }
  }
-  
-
-
-
-
-
-
-function draw() {
-  background(255,255,255);  
-  drawSprites();
-
-
-
-
-
-}
 
 
 function keyPressed() {
